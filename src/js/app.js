@@ -21,14 +21,15 @@ btn.addEventListener('click', () => {
 btn.addEventListener('animationend', () => {
   btn.style.transform = 'scale(1.2)';
 });
-let coin=0;
+let coin = 0;
 btn.addEventListener('click', () => {
-  coin=1;
+  coin = 1;
   btn.classList.add('btn-click');
   btn.addEventListener('animationend', () => {
-    if(coin===1){
-    btn.classList.remove('btn-click');
-    btn.style.opacity = 0;}
-    coin=0;
+    if (coin === 1) {
+      btn.classList.remove('btn-click');
+      btn.style.opacity = 0;
+    }
+    coin = 0;
   });
 });
