@@ -1,0 +1,175 @@
+.text {
+  width: 93%;
+  border: 1px double #c7c7c7;
+  border-radius: 5px;
+  height: 160px;
+  margin: 5px;
+  vertical-align: top;
+}
+
+.wrap-text {
+  text-align: center;
+}
+
+.submit {
+  display: block;
+  width: 95%;
+  border-radius: 5px;
+  border: 0px;
+  margin: 5px;
+  text-align: center;
+}
+
+.wrap-title {
+  background-color: #e7e7e7;
+}
+
+.cros {
+  display: inline-block;
+  text-align: right;
+  margin-left: 90px;
+  cursor: pointer;
+}
+
+.popover-header {
+  display: inline-block;
+
+}
+
+.btn {
+  margin: 250px 40px 40px 250px;
+  background: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #770410;
+  border-color: #770410;
+  animation: btn-anim 300ms;
+}
+
+@keyframes btn-anim {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.btn-click {
+  animation: btn-click 300ms;
+}
+
+@keyframes btn-click {
+  0% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.btn:after {
+  background: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, .5);
+  outline-width: 0px;
+}
+
+.note {
+  width: 250px;
+  height: 250px;
+  border: 1px double #c7c7c7;
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+  opacity: 0;
+}
+
+.back {
+  position: fixed;
+  width: 300px;
+  height: 100px;
+  display: block;
+  z-index: 99999999;
+  background: #ffffff;
+  transform: scaleY(0);
+}
+
+h3 {
+  border-bottom: 1px solid #ebebeb;
+  padding: .5rem .75rem;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  margin: 0rem;
+}
+
+p {
+  padding: .5rem .75rem;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  margin: 0rem;
+}
+
+.arrow {
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #c7c7c7;
+  border-right: 1px solid #c7c7c7;
+  margin-left: 122px;
+  margin-top: -5px;
+}
+
+.arrow-bottom {
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
+.div-animation {
+  animation: div-animation 100ms linear;
+}
+
+@keyframes div-animation {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+  }
+}
+
+.div-animation-back {
+  animation: div-animation-back 100ms linear;
+
+}
+
+@keyframes div-animation-back {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
