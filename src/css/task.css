@@ -44,12 +44,14 @@
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  opacity: 1 ;
 }
 
 .btn:hover {
   background: #770410;
   border-color: #770410;
   animation: btn-anim 300ms;
+  opacity: 1 !important;
 }
 
 @keyframes btn-anim {
@@ -81,11 +83,13 @@
 .btn:after {
   background: #dc3545;
   border-color: #dc3545;
+  opacity: 1;
 }
 
 .btn:focus {
   box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, .5);
   outline-width: 0px;
+  opacity: 1;
 }
 
 .note {
